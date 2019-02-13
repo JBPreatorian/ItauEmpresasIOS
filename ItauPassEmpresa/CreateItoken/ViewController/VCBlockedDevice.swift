@@ -18,6 +18,7 @@ class VCBlockedDevice: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          self.loadDataSet()
+        // Datos 
         // Do any additional setup after loading the view, typically from a nib.
     }
     func loadDataSet()
