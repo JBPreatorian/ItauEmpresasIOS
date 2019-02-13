@@ -1256,7 +1256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7J-St-YKC">
-                                <rect key="frame" x="0.0" y="180" width="387" height="487"/>
+                                <rect key="frame" x="0.0" y="180" width="386" height="487"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perfecto!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cm-9C-hPr">
                                         <rect key="frame" x="44" y="8" width="194" height="52"/>
@@ -1383,10 +1383,10 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="" translatesAutoresizingMaskIntoConstraints="NO" id="a05-sH-hJu">
-                                <rect key="frame" x="167" y="57" width="53" height="52"/>
+                                <rect key="frame" x="167" y="57" width="52" height="52"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOe-Bw-jhJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="131"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61-warning-512.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Cj-u4-AJp">
                                         <rect key="frame" x="22" y="48" width="37" height="35"/>
@@ -1493,9 +1493,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZ8-eU-l8b">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZ8-eU-l8b">
                                 <rect key="frame" x="0.0" y="67" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nS-T5-u4P">
                                         <rect key="frame" x="23" y="54" width="334" height="74"/>
@@ -1538,9 +1537,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QGt-vT-8dc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QGt-vT-8dc">
                                 <rect key="frame" x="0.0" y="257" width="375" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="92" id="V4h-G6-qdv">
@@ -1595,6 +1593,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WZ8-eU-l8b" firstAttribute="leading" secondItem="pDu-7v-Y8s" secondAttribute="leading" id="3gz-Bb-e66"/>
+                            <constraint firstItem="QGt-vT-8dc" firstAttribute="top" secondItem="WZ8-eU-l8b" secondAttribute="bottom" constant="62" id="A2K-EO-BT1"/>
+                            <constraint firstItem="WZ8-eU-l8b" firstAttribute="top" secondItem="pDu-7v-Y8s" secondAttribute="top" constant="47" id="yxT-Xm-LXG"/>
+                            <constraint firstItem="WZ8-eU-l8b" firstAttribute="trailing" secondItem="pDu-7v-Y8s" secondAttribute="trailing" id="z62-3f-8lv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pDu-7v-Y8s"/>
                     </view>
                     <connections>

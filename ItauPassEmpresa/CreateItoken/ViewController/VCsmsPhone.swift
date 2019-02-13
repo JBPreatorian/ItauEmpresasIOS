@@ -28,13 +28,7 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
     @IBOutlet weak var ProcessActivity: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*
-        ViewDialogTriangule.transform = CGAffineTransform(scaleX: 2, y: 2)
-        ViewDialogTriangule.transform = CGAffineTransform(translationX: -256, y: -256)
-        ViewDialogTriangule.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        ViewDialogTriangule.transform = CGAffineTransform.identity*/
-        
+
         self.loadSetDatasmsPhone()
         self.SetLabelDefault()
         self.HideViewMessage()
@@ -85,31 +79,18 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
     @IBAction func BtnBack(_ sender: Any) {
         self.goToLogin()
     }
-    func goToLogin()
-    {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "VCLogin")
-        self.present(controller, animated: true, completion: nil)
-    }
-    func goToiToken()
-    {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "VCiToken")
-        self.present(controller, animated: true, completion: nil)
-    }
-    func goToCoordinates()
-    {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "VCCoordinates")
-        self.present(controller, animated: true, completion: nil)
-    }
+    
+    // Boton Valida SMS
     @IBAction func BtnValidSMS(_ sender: Any) {
         if checkValidStateConexion() == true {
             
+            // Valida Campos
             if checkValidField() == true
             {
+                // Valida si fue enviado
                 if checkSentSmsPhone() == true{
-                 // self.goToiToken()
+                    
+                    //Verifica si es Itoken o coordenadas
                     self.routerByTokenCoordinate()
                 }else{
                     str_mensaje = self.checkTypeMessage(CodeAlert: 7)
@@ -126,16 +107,15 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
         }else{
             str_mensaje = self.checkTypeMessage(CodeAlert: 5)
             showErrorMessages(strMessage:str_mensaje)
-           /* self.ViewMesageAlert.isHidden = false
-                self.LblMessageAlert.text =
-                self.LblMessageAlert.numberOfLines = 3
-                self.LblMessageAlert.lineBreakMode = .byWordWrapping*/
+
                 print("State API Connection is False")
         }
     }
-    
+
     func routerByTokenCoordinate()
     {
+        // necesita consumir json Itau de apoderado y verificar si es itoken o coordenadas
+        //
         var codrouter:Int = 2
         
         if codrouter == 1
@@ -157,7 +137,7 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
     }
     func checkSentSmsPhone() -> Bool {
         let checkState = true
-        
+        // debe consumir servicio de envio de SMS
         
         return checkState
     }
@@ -255,6 +235,24 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
         return changedText.count <= 8
     }
     
+    func goToLogin()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "VCLogin")
+        self.present(controller, animated: true, completion: nil)
+    }
+    func goToiToken()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "VCiToken")
+        self.present(controller, animated: true, completion: nil)
+    }
+    func goToCoordinates()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "VCCoordinates")
+        self.present(controller, animated: true, completion: nil)
+    }
 
     /*
     func isConnectedToNetwork() -> Bool {
