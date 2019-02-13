@@ -166,9 +166,6 @@ class VCCreatePin: UIViewController ,UITextFieldDelegate {
     }
     func getDataUserCore()
     {
-        //let data:Data = SecureData.load(key: "dataUser")!
-       // print(data)
-        
         if let loadedData = SecureData.load(key: "dataUser") {
             do {
                 let login = try JSONDecoder().decode(UserPin.self, from: loadedData)
@@ -181,29 +178,11 @@ class VCCreatePin: UIViewController ,UITextFieldDelegate {
                 print(error.localizedDescription)
             }
         }
-        
-       ////self.namesUserFromCore = "Mirna"
-       // self.lastNamesFromCore = "Ortiz"
-       // self.ideUserFromCore = "52009612"
-        
     }
     func SavePinCoreData() -> Bool {
         self.getDataUserCore()
         var SavedItem:Bool = true
-       /* var userpins: [UserPin] = []
-            userpins.append(UserPin(
-            names: self.namesUserFromCore,
-            lnames: self.lastNamesFromCore,
-            ide: self.ideUserFromCore,
-            pin: self.textPin.text))
-         
-         struct UserPin:Decodable{
-         var names: String!
-         var lnames: String!
-         var ide: String!
-         var pin: String!
-         }
-         */
+       
         var mDictionary : [String: Any] =
             [ "names": self.namesUserFromCore,
               "lnames":self.lastNamesFromCore,

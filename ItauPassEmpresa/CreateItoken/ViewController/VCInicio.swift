@@ -74,7 +74,7 @@ class VCInicio: UIViewController {
     }
     func showErrorMessages(strMessage:String)
     {
-        /*
+         /*
          self.ViewAlerts.isHidden = false
          self.LblMensajeAlert.text = strMessage
          self.LblMensajeAlert.numberOfLines = 3
@@ -84,7 +84,9 @@ class VCInicio: UIViewController {
     @IBAction func BtnContinuar(_ sender: Any) {
         if checkValidField() == true
         {
+            // va a la pantalla demo entrust sin lock&feel
             //self.goToIntermedia()
+            // va a la pantalla SMS Phone
             self.goToSMSphone()
         }else{
             self.strMensage = ctrlErrorInicio(codErr:"ERRDLT")

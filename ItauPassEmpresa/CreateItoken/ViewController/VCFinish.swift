@@ -14,9 +14,6 @@ class VCFinish: UIViewController {
    
     @IBOutlet weak var LblTitle: UILabel!
     @IBOutlet weak var LblDescription: UILabel!
-    // @IBOutlet weak var LblDescrip: UILabel!
-   // @IBOutlet weak var LblPIN: UILabel!
-   // @IBOutlet weak var LblDescripPin: UILabel!
     @IBOutlet weak var BtnBeginApp: UIButton!
     private let apiManager = APIGlobalProvider()
     
@@ -62,8 +59,5 @@ class VCFinish: UIViewController {
         self.LblDescription.numberOfLines = 5
         self.LblDescription.lineBreakMode = .byWordWrapping
     }
-    func checkValidField() -> Bool {
-        let checkValid = true
-        return checkValid
-    }
+    
 }

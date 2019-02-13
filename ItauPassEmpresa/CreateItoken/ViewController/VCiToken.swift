@@ -14,7 +14,6 @@ class VCiToken: UIViewController {
     @IBOutlet weak var LblAproved: UILabel!
     @IBOutlet weak var LblDescription: UILabel!
     @IBOutlet weak var textToken: UITextField!
-    //@IBOutlet weak var BtnValidToken: UIButton!
     @IBOutlet weak var BtnValidToken: UIButton!
     @IBOutlet weak var ViewAlertMessage: UIView!
     @IBOutlet weak var ProcessActivity: UIActivityIndicatorView!
@@ -22,7 +21,6 @@ class VCiToken: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadSetDataiToken()
-        // Do any additional setup after loading the view, typically from a nib.
         self.SetDesignObject()
         self.HideViewMessage()
         self.hiddemnProcessActivity()
@@ -71,10 +69,13 @@ class VCiToken: UIViewController {
     }
     @IBAction func BtnValidToken(_ sender: Any) {
         
+        // valida conection a internet
         if checkInternetConnection() == true
         {
+            // valida Token
             if checkValidToken() == true
             {
+                // valida campos validos
                 if checkValidField()  == true {
                     self.goToCreatePin()
                 }else{

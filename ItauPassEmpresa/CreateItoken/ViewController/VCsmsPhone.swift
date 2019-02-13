@@ -11,7 +11,6 @@ import UIKit
 import SystemConfiguration
 class VCsmsphone: UIViewController ,UITextFieldDelegate {
     var str_mensaje:String = "";
-    
     @IBOutlet weak var LblTitulo: UILabel!
     @IBOutlet weak var LblDescrip: UILabel!
     @IBOutlet weak var Textphone: UITextField!
@@ -20,10 +19,7 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
     @IBOutlet weak var textSMS: UITextField!
     @IBOutlet weak var LblExpiration: UILabel!
     @IBOutlet weak var BtnValidSMS: UIButton!
-    
-    
     @IBOutlet weak var ViewDialogError: UIView!
-    
     @IBOutlet weak var ViewDialogTriangule: UIView!
     @IBOutlet weak var ProcessActivity: UIActivityIndicatorView!
     override func viewDidLoad() {
@@ -71,6 +67,7 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
         self.ViewMesageAlert.isHidden = true
         self.LblMessageAlert.text = ""
     }
+    //cierra ventana alerta errores
     @IBAction func BtnCloseAlert(_ sender: Any) {
         self.CloseAlertViews()
         print("Close View")
