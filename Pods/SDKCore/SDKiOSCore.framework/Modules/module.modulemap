@@ -1,0 +1,11 @@
+framework module SDKiOSCore {
+  umbrella header "SDKiOSCore.h"
+
+  export *
+  module * { export * }
+}
+
+module SDKiOSCore.Swift {
+    header "SDKiOSCore-Swift.h"
+    requires objc
+}

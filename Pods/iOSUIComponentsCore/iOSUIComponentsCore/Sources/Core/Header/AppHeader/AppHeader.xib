@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="itaufonts_master_24px_v1.ttf">
+            <string>itaufonts_master_24px_v1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppHeader" customModule="iOSUIComponentsCore" customModuleProvider="target">
+            <connections>
+                <outlet property="firstActionButton" destination="dG2-8M-QPa" id="eIl-K9-szh"/>
+                <outlet property="secondActionButton" destination="oim-DE-Rxd" id="pvB-Qj-sNS"/>
+                <outlet property="subtitleLabel" destination="3QE-no-RE0" id="RVb-zx-Qu0"/>
+                <outlet property="tapRecognizer" destination="ygn-yH-MTU" id="f3r-4i-u3x"/>
+                <outlet property="titleLabel" destination="nqs-Gf-8JO" id="RYb-Ru-Mgx"/>
+                <outlet property="userInitials" destination="GXF-Zl-9dx" id="un3-Vg-lZW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXF-Zl-9dx" userLabel="UserInitials" customClass="UserInitials" customModule="iOSUIComponentsCore" customModuleProvider="target">
+                    <rect key="frame" x="16" y="16" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="O0I-MZ-y0l"/>
+                        <constraint firstAttribute="height" constant="40" id="SlO-gq-IS8"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3J-8H-eVG" userLabel="TitleContainer">
+                    <rect key="frame" x="72" y="36" width="207" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqs-Gf-8JO" userLabel="titleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.92549019607843142" green="0.45490196078431372" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QE-no-RE0" userLabel="subtitleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.14509803921568626" green="0.13333333333333333" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3QE-no-RE0" secondAttribute="bottom" id="0U1-tX-atF"/>
+                        <constraint firstItem="nqs-Gf-8JO" firstAttribute="top" secondItem="O3J-8H-eVG" secondAttribute="top" id="K2o-hP-LRA"/>
+                        <constraint firstAttribute="trailing" secondItem="nqs-Gf-8JO" secondAttribute="trailing" id="TYX-tv-7Sw"/>
+                        <constraint firstItem="3QE-no-RE0" firstAttribute="leading" secondItem="O3J-8H-eVG" secondAttribute="leading" id="dcN-Ro-Gv3"/>
+                        <constraint firstItem="3QE-no-RE0" firstAttribute="top" secondItem="nqs-Gf-8JO" secondAttribute="bottom" id="hZl-tz-bhI"/>
+                        <constraint firstAttribute="trailing" secondItem="3QE-no-RE0" secondAttribute="trailing" id="qn6-6i-Kpm"/>
+                        <constraint firstItem="nqs-Gf-8JO" firstAttribute="leading" secondItem="O3J-8H-eVG" secondAttribute="leading" id="yUI-tQ-MQm"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywv-G1-mZN" userLabel="ActionsContainer">
+                    <rect key="frame" x="295" y="12" width="64" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oim-DE-Rxd" userLabel="secondActionButton">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="Hmr-bJ-phw"/>
+                                <constraint firstAttribute="height" constant="48" id="kfK-Il-XuV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="itaufonts_master_24px_v1" family="itaufonts_master_24px_v1" pointSize="24"/>
+                            <connections>
+                                <action selector="handleSecondActionTap" destination="-1" eventType="touchUpInside" id="lXN-Ef-cEC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dG2-8M-QPa" userLabel="firstActionButton">
+                            <rect key="frame" x="40" y="0.0" width="24" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="5io-cF-867"/>
+                                <constraint firstAttribute="height" constant="48" id="t34-BK-U3i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="itaufonts_master_24px_v1" family="itaufonts_master_24px_v1" pointSize="24"/>
+                            <connections>
+                                <action selector="handleFirstActionTap" destination="-1" eventType="touchUpInside" id="QdJ-09-Hmy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dG2-8M-QPa" secondAttribute="bottom" id="958-qM-PvB"/>
+                        <constraint firstItem="dG2-8M-QPa" firstAttribute="leading" secondItem="oim-DE-Rxd" secondAttribute="trailing" constant="16" id="FtJ-xP-MHw"/>
+                        <constraint firstAttribute="width" constant="64" id="Y2M-Ub-okZ"/>
+                        <constraint firstItem="dG2-8M-QPa" firstAttribute="top" secondItem="ywv-G1-mZN" secondAttribute="top" id="YVr-DH-pTj"/>
+                        <constraint firstAttribute="trailing" secondItem="dG2-8M-QPa" secondAttribute="trailing" id="ZUL-WE-00e"/>
+                        <constraint firstAttribute="bottom" secondItem="oim-DE-Rxd" secondAttribute="bottom" id="mmC-hv-YUU"/>
+                        <constraint firstItem="oim-DE-Rxd" firstAttribute="leading" secondItem="ywv-G1-mZN" secondAttribute="leading" id="qjg-Nz-Lq3"/>
+                        <constraint firstItem="oim-DE-Rxd" firstAttribute="top" secondItem="ywv-G1-mZN" secondAttribute="top" id="uIK-V8-wVn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GXF-Zl-9dx" secondAttribute="bottom" constant="16" id="8iK-xj-i4h"/>
+                <constraint firstItem="O3J-8H-eVG" firstAttribute="leading" secondItem="GXF-Zl-9dx" secondAttribute="trailing" constant="16" id="Zyl-gW-Ngi"/>
+                <constraint firstItem="ywv-G1-mZN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aDL-O5-1JE"/>
+                <constraint firstItem="GXF-Zl-9dx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="dRZ-Uz-hZK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ywv-G1-mZN" secondAttribute="trailing" constant="16" id="ere-bT-bHd"/>
+                <constraint firstItem="GXF-Zl-9dx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gqm-tV-PKY"/>
+                <constraint firstItem="ywv-G1-mZN" firstAttribute="leading" secondItem="O3J-8H-eVG" secondAttribute="trailing" constant="16" id="hwO-v3-rgl"/>
+                <constraint firstItem="GXF-Zl-9dx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qod-Nf-hyh"/>
+                <constraint firstItem="O3J-8H-eVG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="roj-6y-Vkx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="ygn-yH-MTU" appends="YES" id="YSf-K5-R6o"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="-112.44377811094454"/>
+        </view>
+        <tapGestureRecognizer id="ygn-yH-MTU">
+            <connections>
+                <action selector="handleTap:" destination="-1" id="hnS-re-VeP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

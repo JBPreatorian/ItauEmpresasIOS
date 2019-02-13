@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="itaufonts_master_24px_v1.ttf">
+            <string>itaufonts_master_24px_v1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageHeader" customModule="iOSUIComponentsCore" customModuleProvider="target">
+            <connections>
+                <outlet property="firstActionButton" destination="7Uo-K6-EpI" id="yVz-Wh-P9u"/>
+                <outlet property="leftActionButton" destination="5aZ-eH-usM" id="D0K-8e-vIt"/>
+                <outlet property="secondActionButton" destination="YDX-NJ-JoM" id="yuE-PW-har"/>
+                <outlet property="subtitleLabel" destination="6Ha-yJ-kb8" id="YfZ-ag-TSA"/>
+                <outlet property="tapRecognizer" destination="dty-9d-uz5" id="kbo-Up-FfJ"/>
+                <outlet property="titleLabel" destination="aeV-L9-346" id="uM0-Pm-CIH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q5-62-jMT" userLabel="LeftActionContainer">
+                    <rect key="frame" x="8" y="8" width="56" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-eH-usM" userLabel="leftActionButton">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="mwy-0f-W8k"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="itaufonts_master_24px_v1" family="itaufonts_master_24px_v1" pointSize="24"/>
+                            <connections>
+                                <action selector="handleLeftActionTap" destination="-1" eventType="touchUpInside" id="gHI-B8-eVR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5aZ-eH-usM" firstAttribute="leading" secondItem="5q5-62-jMT" secondAttribute="leading" id="3dT-j9-7qy"/>
+                        <constraint firstAttribute="height" constant="48" id="PgA-qK-pwQ"/>
+                        <constraint firstItem="5aZ-eH-usM" firstAttribute="top" secondItem="5q5-62-jMT" secondAttribute="top" id="ZCD-rf-Fhl"/>
+                        <constraint firstAttribute="bottom" secondItem="5aZ-eH-usM" secondAttribute="bottom" id="oRe-hd-4Hl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXV-p0-vIa" userLabel="TitleContainer">
+                    <rect key="frame" x="70" y="32" width="207" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeV-L9-346" userLabel="titleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="2"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-yJ-kb8" userLabel="subTitleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="aeV-L9-346" secondAttribute="trailing" id="1JI-LX-dtY"/>
+                        <constraint firstAttribute="bottom" secondItem="6Ha-yJ-kb8" secondAttribute="bottom" id="1Su-aE-AIS"/>
+                        <constraint firstItem="aeV-L9-346" firstAttribute="leading" secondItem="OXV-p0-vIa" secondAttribute="leading" id="1dO-Gc-PfY"/>
+                        <constraint firstItem="6Ha-yJ-kb8" firstAttribute="leading" secondItem="OXV-p0-vIa" secondAttribute="leading" id="3tO-IX-iSG"/>
+                        <constraint firstItem="aeV-L9-346" firstAttribute="top" secondItem="OXV-p0-vIa" secondAttribute="top" id="Ofq-Mu-UI4"/>
+                        <constraint firstItem="6Ha-yJ-kb8" firstAttribute="top" secondItem="aeV-L9-346" secondAttribute="bottom" constant="-2" id="YQC-9u-V6y"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ha-yJ-kb8" secondAttribute="trailing" id="ifn-jM-SRb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZeA-pb-a82" userLabel="ActionsContainer">
+                    <rect key="frame" x="293" y="8" width="56" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDX-NJ-JoM" userLabel="secondActionButton">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="5Ec-IS-Rno"/>
+                                <constraint firstAttribute="height" constant="48" id="YKn-DQ-pZ2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="itaufonts_master_24px_v1" family="itaufonts_master_24px_v1" pointSize="24"/>
+                            <connections>
+                                <action selector="handleSecondActionTap" destination="-1" eventType="touchUpInside" id="k2k-KY-VQg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uo-K6-EpI" userLabel="firstActionButton">
+                            <rect key="frame" x="32" y="0.0" width="24" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="ZeF-h4-f3f"/>
+                                <constraint firstAttribute="height" constant="48" id="kry-b4-wcT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="itaufonts_master_24px_v1" family="itaufonts_master_24px_v1" pointSize="24"/>
+                            <connections>
+                                <action selector="handleFirstActionTap" destination="-1" eventType="touchUpInside" id="gzj-3v-tJK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7Uo-K6-EpI" secondAttribute="bottom" id="6Tw-Ew-DFc"/>
+                        <constraint firstAttribute="bottom" secondItem="YDX-NJ-JoM" secondAttribute="bottom" id="7x4-09-ah1"/>
+                        <constraint firstItem="YDX-NJ-JoM" firstAttribute="leading" secondItem="ZeA-pb-a82" secondAttribute="leading" id="8rw-2y-693"/>
+                        <constraint firstAttribute="trailing" secondItem="7Uo-K6-EpI" secondAttribute="trailing" id="BTJ-4W-sNI"/>
+                        <constraint firstItem="7Uo-K6-EpI" firstAttribute="top" secondItem="ZeA-pb-a82" secondAttribute="top" id="caH-Tu-RGz"/>
+                        <constraint firstItem="YDX-NJ-JoM" firstAttribute="top" secondItem="ZeA-pb-a82" secondAttribute="top" id="fHs-ZZ-nUX"/>
+                        <constraint firstItem="7Uo-K6-EpI" firstAttribute="leading" secondItem="YDX-NJ-JoM" secondAttribute="trailing" constant="8" id="kkx-mU-jNQ"/>
+                        <constraint firstAttribute="width" constant="56" id="uQ4-fJ-7P9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="OXV-p0-vIa" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="7kF-7D-3YN"/>
+                <constraint firstItem="ZeA-pb-a82" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="8UV-5V-XO4"/>
+                <constraint firstItem="5q5-62-jMT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="EVd-d3-MrS"/>
+                <constraint firstAttribute="trailing" secondItem="ZeA-pb-a82" secondAttribute="trailing" constant="8" id="SfB-HT-oPZ"/>
+                <constraint firstItem="OXV-p0-vIa" firstAttribute="leading" secondItem="5q5-62-jMT" secondAttribute="trailing" constant="6" id="gYw-xd-PaO"/>
+                <constraint firstItem="5q5-62-jMT" firstAttribute="width" secondItem="ZeA-pb-a82" secondAttribute="width" id="gkf-DT-E7H"/>
+                <constraint firstItem="ZeA-pb-a82" firstAttribute="leading" secondItem="OXV-p0-vIa" secondAttribute="trailing" constant="16" id="hh0-xG-PUv"/>
+                <constraint firstItem="5q5-62-jMT" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="o4D-XJ-pPK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="dty-9d-uz5" appends="YES" id="DTP-fS-DOh"/>
+            </connections>
+            <point key="canvasLocation" x="61.600000000000001" y="-102.54872563718142"/>
+        </view>
+        <tapGestureRecognizer id="dty-9d-uz5">
+            <connections>
+                <action selector="handleTap:" destination="-1" id="ItK-zx-Bo5"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceiptButtonsCell" customModule="iOSUIComponentsCore" customModuleProvider="target">
+            <connections>
+                <outlet property="leftActionButton" destination="RJN-OF-8b1" id="CK8-Of-SBl"/>
+                <outlet property="rightActionButton" destination="yO1-be-MvH" id="T3R-j1-xsq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="receiptButtonsCell" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJN-OF-8b1">
+                    <rect key="frame" x="24" y="0.0" width="46" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ff4-kX-Lnq"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapLeftButton:" destination="-1" eventType="touchUpInside" id="6CA-oS-3dD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO1-be-MvH">
+                    <rect key="frame" x="86" y="0.0" width="46" height="105"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapRightButton:" destination="-1" eventType="touchUpInside" id="jeK-pO-VhP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yO1-be-MvH" firstAttribute="height" secondItem="RJN-OF-8b1" secondAttribute="height" id="4O4-OS-lGM"/>
+                <constraint firstItem="RJN-OF-8b1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="EN8-Lb-ORS"/>
+                <constraint firstItem="RJN-OF-8b1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EfL-z2-CPg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RJN-OF-8b1" secondAttribute="bottom" constant="8" id="Sfi-L2-v27"/>
+                <constraint firstItem="yO1-be-MvH" firstAttribute="centerY" secondItem="RJN-OF-8b1" secondAttribute="centerY" id="dIw-t7-PtG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yO1-be-MvH" secondAttribute="trailing" constant="24" id="nX3-ni-X4w"/>
+                <constraint firstItem="yO1-be-MvH" firstAttribute="leading" secondItem="RJN-OF-8b1" secondAttribute="trailing" constant="16" id="uyI-fS-grj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-28.800000000000001" y="-393.55322338830587"/>
+        </view>
+    </objects>
+</document>

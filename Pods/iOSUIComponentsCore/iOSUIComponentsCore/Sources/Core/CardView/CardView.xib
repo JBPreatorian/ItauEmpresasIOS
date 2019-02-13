@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ItauTextApp-Bold.ttf">
+            <string>ItauTextApp-Bold</string>
+        </array>
+        <array key="ItauTextApp-Regular.ttf">
+            <string>ItauTextApp-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="iOSUIComponentsCore" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonContainerView" destination="wlH-Pp-NLR" id="YGp-8Q-kl6"/>
+                <outlet property="cardImageView" destination="2ba-ui-Cqq" id="hMJ-xp-AGh"/>
+                <outlet property="imageActionButton" destination="TAs-Ya-bNG" id="3Bg-AP-bBz"/>
+                <outlet property="leftActionButton" destination="qTR-fZ-5Pp" id="edf-AP-tsk"/>
+                <outlet property="rightActionButton" destination="evt-RW-eV3" id="QUQ-5m-Hpj"/>
+                <outlet property="textLabel" destination="zcz-EH-5hk" id="4cX-ZB-I9F"/>
+                <outlet property="titleLabel" destination="f3J-rF-uLs" id="rcR-DM-2wU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="367"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ba-ui-Cqq">
+                    <rect key="frame" x="8" y="8" width="262" height="131"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2ba-ui-Cqq" secondAttribute="height" multiplier="16:8" id="qsQ-Yk-iqY"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAs-Ya-bNG">
+                    <rect key="frame" x="8" y="8" width="262" height="131"/>
+                    <connections>
+                        <action selector="imageTapped" destination="-1" eventType="touchUpInside" id="3Vw-sP-lso"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Card Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3J-rF-uLs">
+                    <rect key="frame" x="16" y="147" width="246" height="21"/>
+                    <fontDescription key="fontDescription" name="ItauTextApp-Bold" family="Itau Text App" pointSize="16"/>
+                    <color key="textColor" red="0.92549019607843142" green="0.4392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-Hv-bqg">
+                    <rect key="frame" x="16" y="168" width="246" height="159"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcz-EH-5hk">
+                            <rect key="frame" x="0.0" y="0.0" width="246" height="18.5"/>
+                            <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zcz-EH-5hk" secondAttribute="trailing" id="A6o-ct-9qx"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zcz-EH-5hk" secondAttribute="bottom" id="C5C-cP-Bd9"/>
+                        <constraint firstItem="zcz-EH-5hk" firstAttribute="leading" secondItem="AL3-Hv-bqg" secondAttribute="leading" id="NPX-cV-jum"/>
+                        <constraint firstItem="zcz-EH-5hk" firstAttribute="top" secondItem="AL3-Hv-bqg" secondAttribute="top" id="UaT-rw-nNN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlH-Pp-NLR">
+                    <rect key="frame" x="4" y="327" width="270" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-fZ-5Pp">
+                            <rect key="frame" x="12" y="0.0" width="30" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="handleLeftActionTap" destination="-1" eventType="touchUpInside" id="LZv-6C-g5M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evt-RW-eV3">
+                            <rect key="frame" x="58" y="0.0" width="30" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="handleRightActionTap" destination="-1" eventType="touchUpInside" id="tZ8-N9-UMG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="evt-RW-eV3" firstAttribute="top" secondItem="wlH-Pp-NLR" secondAttribute="top" id="2rg-dy-3g6"/>
+                        <constraint firstAttribute="bottom" secondItem="qTR-fZ-5Pp" secondAttribute="bottom" id="6jz-Uh-wIC"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qTR-fZ-5Pp" secondAttribute="trailing" constant="12" id="95p-Y0-TOd"/>
+                        <constraint firstItem="qTR-fZ-5Pp" firstAttribute="leading" secondItem="wlH-Pp-NLR" secondAttribute="leading" constant="12" id="BwM-Mf-YXz"/>
+                        <constraint firstAttribute="height" constant="40" id="RVJ-cn-g00"/>
+                        <constraint firstItem="qTR-fZ-5Pp" firstAttribute="top" secondItem="wlH-Pp-NLR" secondAttribute="top" id="XWc-aw-hNX"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="evt-RW-eV3" secondAttribute="trailing" constant="12" id="iIJ-ky-A9b"/>
+                        <constraint firstAttribute="bottom" secondItem="evt-RW-eV3" secondAttribute="bottom" id="y2V-Td-n0y"/>
+                        <constraint firstItem="evt-RW-eV3" firstAttribute="leading" secondItem="qTR-fZ-5Pp" secondAttribute="trailing" constant="16" placeholder="YES" id="zye-GI-SVK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TAs-Ya-bNG" firstAttribute="leading" secondItem="2ba-ui-Cqq" secondAttribute="leading" id="1Ju-la-2ox"/>
+                <constraint firstItem="TAs-Ya-bNG" firstAttribute="top" secondItem="2ba-ui-Cqq" secondAttribute="top" id="1WA-gI-51P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2ba-ui-Cqq" secondAttribute="trailing" constant="8" id="8Iw-FC-nDJ"/>
+                <constraint firstItem="f3J-rF-uLs" firstAttribute="top" secondItem="2ba-ui-Cqq" secondAttribute="bottom" constant="8" id="BBE-aG-fwi"/>
+                <constraint firstItem="TAs-Ya-bNG" firstAttribute="trailing" secondItem="2ba-ui-Cqq" secondAttribute="trailing" id="C9i-ts-3ql"/>
+                <constraint firstItem="f3J-rF-uLs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Gnv-f0-G9L"/>
+                <constraint firstItem="AL3-Hv-bqg" firstAttribute="top" secondItem="f3J-rF-uLs" secondAttribute="bottom" id="MVe-EV-hVi"/>
+                <constraint firstItem="AL3-Hv-bqg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="NfU-aN-fBp"/>
+                <constraint firstAttribute="trailing" secondItem="AL3-Hv-bqg" secondAttribute="trailing" constant="16" id="Pof-01-LLg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f3J-rF-uLs" secondAttribute="trailing" constant="16" id="RBy-g1-mxC"/>
+                <constraint firstItem="TAs-Ya-bNG" firstAttribute="bottom" secondItem="2ba-ui-Cqq" secondAttribute="bottom" id="S0S-5m-Ixh"/>
+                <constraint firstAttribute="bottom" secondItem="wlH-Pp-NLR" secondAttribute="bottom" id="YvI-rN-ysu"/>
+                <constraint firstItem="wlH-Pp-NLR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="asZ-xW-9sB"/>
+                <constraint firstAttribute="trailing" secondItem="wlH-Pp-NLR" secondAttribute="trailing" constant="4" id="o1R-p5-bY4"/>
+                <constraint firstItem="wlH-Pp-NLR" firstAttribute="top" secondItem="AL3-Hv-bqg" secondAttribute="bottom" id="rmC-dt-iIB"/>
+                <constraint firstItem="2ba-ui-Cqq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="s7Z-uc-hon"/>
+                <constraint firstItem="2ba-ui-Cqq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="v4l-ib-Hhg"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-24" y="-201.5"/>
+        </view>
+    </objects>
+</document>

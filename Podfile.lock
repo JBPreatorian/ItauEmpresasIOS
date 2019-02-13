@@ -1,0 +1,112 @@
+PODS:
+  - AFNetworkActivityLogger (3.0.0):
+    - AFNetworking/NSURLSession (~> 3.0)
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Default (2.2.0)
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - "libextobjc/NSInvocation+EXT (= 0.4.1)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.4.1)"
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSInvocation+EXT (0.4.1)":
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSMethodSignature+EXT (0.4.1)":
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - SDKCore (2.2.1):
+    - SDKCore/Core (= 2.2.1)
+  - SDKCore/Core (2.2.1):
+    - AFNetworkActivityLogger (= 3.0.0)
+    - AFNetworking (= 3.0.4)
+    - CocoaLumberjack (~> 2.2.0)
+    - libextobjc (~> 0.4.1)
+    - Mantle
+    - SDKiOSRoutes (= 1.2.0)
+    - SMXMLDocument (= 1.1)
+    - XMLDictionary (~> 1.4)
+  - SDKiOSRoutes (1.2.0)
+  - SMXMLDocument (1.1)
+  - TextFieldEffects (1.5.1)
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - SDKCore (= 2.2.1)
+  - TextFieldEffects
+
+SPEC REPOS:
+  http://gitmobile.itau/framework/pod-specs.git:
+    - AFNetworkActivityLogger
+    - AFNetworking
+    - CocoaLumberjack
+    - libextobjc
+    - Mantle
+    - SDKCore
+    - SDKiOSRoutes
+    - SMXMLDocument
+    - XMLDictionary
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: ede8ff478127a9b91cc370ebed1e99853b5b41bc
+  AFNetworking: d1a6a46025d620f798cab67343fa3770422fe2f4
+  CocoaLumberjack: a307357cb534faed7f6ac6fd9927bb469e4b3f05
+  libextobjc: eab9a49525dc8e6f005bb329645b69389ceeff6c
+  Mantle: af660053998fcf3dbaea5d08ba5b5d1da48b8c46
+  SDKCore: d6c8e8b3758002d7d4f5d82acdbc236a38ace228
+  SDKiOSRoutes: 221de1c478f6689cefea9e21e70ec7dad552a8fa
+  SMXMLDocument: 7016a97ee3e580e575523ed1cdc9378bed126105
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+  XMLDictionary: 5b70a77f88ddd294f9944081a74eb5adfbc0a1cd
+
+PODFILE CHECKSUM: 238b95320ab0a374afbf1d078f364279ad530dad
+
+COCOAPODS: 1.5.3

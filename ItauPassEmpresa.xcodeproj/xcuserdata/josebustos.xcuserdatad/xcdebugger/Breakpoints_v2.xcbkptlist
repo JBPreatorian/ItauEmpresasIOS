@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ItauPassEmpresa/CreateItoken/Controller/VCFinish.swift"
+            timestampString = "567630155.518436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "VCFinish"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+            timestampString = "571323139.816947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "VCLogin"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ItauPassEmpresa.VCLogin.ImagenPyme.getter : weak Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "ItauPassEmpresa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josebustos/Desktop/ItauPassEmpresa/ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+                  timestampString = "568324139.1944439"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ItauPassEmpresa.VCLogin.ImagenPyme.setter : weak Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "ItauPassEmpresa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josebustos/Desktop/ItauPassEmpresa/ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+                  timestampString = "568324139.201408"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ItauPassEmpresa.VCLogin.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ItauPassEmpresa.VCLogin"
+                  moduleName = "ItauPassEmpresa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josebustos/Desktop/ItauPassEmpresa/ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+                  timestampString = "568324139.205542"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "486">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ItauPassEmpresa.VCLogin.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ItauPassEmpresa.VCLogin&gt;"
+                  moduleName = "ItauPassEmpresa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josebustos/Desktop/ItauPassEmpresa/ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+                  timestampString = "568324139.207561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "457">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+            timestampString = "571323139.8179049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "Btnlogin(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+            timestampString = "571323139.818007"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "checkValidField()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ItauPassEmpresa/Login/ViewController/VCLogin.swift"
+            timestampString = "571323139.8180881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "checkValidField()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

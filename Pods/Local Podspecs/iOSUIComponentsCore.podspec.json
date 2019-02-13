@@ -1,0 +1,53 @@
+{
+  "name": "iOSUIComponentsCore",
+  "version": "0.0.3",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "summary": "cookiecutter bootstrap template for swift framework",
+  "homepage": "itau.com.br",
+  "social_media_url": "https://twitter.com/rahulkatariya91",
+  "authors": {
+    "Inacio Ferrarini": "inacio.ferrarini@accenture.com"
+  },
+  "source": {
+    "git": "https://github.com/inacioferrarini/iOSUIComponentsCore.git",
+    "tag": "v0.0.3"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.10",
+    "tvos": "9.0",
+    "watchos": "2.0"
+  },
+  "requires_arc": true,
+  "swift_version": "4.2",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "iOSUIComponentsCore/Sources/**/*.{m,swift}",
+      "resources": "iOSUIComponentsCore/Sources/**/*.{xib,storyboard,png,ttf}",
+      "exclude_files": [
+        "iOSUIComponentsCore/Sources/**/README/*",
+        "iOSUIComponentsCore/Sources/**/*.md"
+      ],
+      "resource_bundles": {
+        "iOSUIComponentsCore": [
+          "Pod/**/*.storyboard",
+          "Pod/**/*.xib",
+          "Pod/**/*.png",
+          "Pod/**/Fonts.plist",
+          "Pod/**/*.ttf"
+        ]
+      },
+      "frameworks": "UIKit",
+      "dependencies": {
+        "Reusable": [
+          "4.0.3"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module SDKiOSRoutes {
+  umbrella header "SDKiOSRoutes.h"
+
+  export *
+  module * { export * }
+}
+
+module SDKiOSRoutes.Swift {
+    header "SDKiOSRoutes-Swift.h"
+    requires objc
+}
