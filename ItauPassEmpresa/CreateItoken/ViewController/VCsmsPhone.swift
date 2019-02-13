@@ -113,7 +113,7 @@ class VCsmsphone: UIViewController ,UITextFieldDelegate {
     {
         // necesita consumir json Itau de apoderado y verificar si es itoken o coordenadas
         //
-        var codrouter:Int = 2
+        var codrouter:Int = 1
         
         if codrouter == 1
         {

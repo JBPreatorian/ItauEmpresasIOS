@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class VCiToken: UIViewController {
+class VCiToken: UIViewController ,UITextFieldDelegate{
     
     @IBOutlet weak var LblAproved: UILabel!
     @IBOutlet weak var LblDescription: UILabel!
@@ -24,6 +24,13 @@ class VCiToken: UIViewController {
         self.SetDesignObject()
         self.HideViewMessage()
         self.hiddemnProcessActivity()
+        self.initializeTextFields()
+    }
+    func initializeTextFields() {
+        self.textToken.delegate = self as? UITextFieldDelegate
+        textToken.delegate = self as? UITextFieldDelegate
+        textToken.keyboardType = UIKeyboardType.numberPad
+        
     }
     func hiddemnProcessActivity()
     {
@@ -120,4 +127,44 @@ class VCiToken: UIViewController {
         }
         return checkValid
     }
+    
+    
+    func textField(textField: UITextField,shouldChangeCharactersInRange range: NSRange,replacementString string: String)-> Bool
+    {
+        if string.characters.count == 0 {
+            return true
+        }
+        let currentText = textField.text ?? ""
+        let prospectiveText = (currentText as NSString).replacingCharacters(in: range, with: string)
+        
+        switch textField {
+        case textToken:
+            return prospectiveText.containsOnlyCharactersIn(matchCharacters: "0123456789") &&
+                prospectiveText.characters.count <= 8
+        case textToken:
+            return prospectiveText.isNumeric() &&
+                prospectiveText.characters.count <= 8
+        default:
+            return true
+        }
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = textField.text ?? ""
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        return updatedText.count <= 8
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let currentText = textView.text ?? ""
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        let changedText = currentText.replacingCharacters(in: stringRange, with: text)
+        return changedText.count <= 8
+    }
+    
 }
